@@ -24,5 +24,7 @@ stages:
     steps:
     - bash: echo QADeployJob
 - stage: ProdDeployJob
+  jobs:
+  - job: PreDeployJob
     steps:
     - bash: echo ProdDeployjob
